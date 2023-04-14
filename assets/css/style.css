@@ -15,27 +15,41 @@ header {
 }
 
 .search-section {
-  padding: 20px;
   width: 30%;
+  padding: 20px;
+}
+
+.search-city {
+  min-width: 100%;
+  max-width: 300px;
 }
 
 .search-section input {
+  width: 100%;
+  max-width: 300px;
   padding: 5px;
 }
 
 .search-section button {
-  margin-left: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 10px;
   padding: 5px;
 }
 
 .search-section #search-history {
+  width: 100%;
+  max-width: 300px;
   margin-top: 10px;
+  border-top: 1px solid black;
 }
 
 .search-section #search-history button {
   display: block;
-  margin-bottom: 5px;
-  text-align: left;
+  margin-top: 10px;
+  padding: 5px;
+  background-color: darkgray;
+  text-align: center;
 }
 
 .weather-content {
@@ -43,20 +57,23 @@ header {
 }
 
 .current-weather {
-  padding: 20px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
 }
 
 .forecast {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .forecast-card {
-  background-color:navy;;
-  border: 1px solid #ccc;
+  width: 200px;
   margin: 10px;
   padding: 10px;
-  width: 200px;
+  background-color: darkblue;
+  border: 1px solid black;
+  color: white;
 }
   
