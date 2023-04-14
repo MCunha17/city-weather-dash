@@ -1,12 +1,19 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+}
+
+h1 {
+  font-size: 32px;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 header {
-  background-color: blue;
-  padding: 20px;
+  background-image: linear-gradient(to right, blue, purple);
+  margin: 10px;
+  padding-left: 300px;
   text-align: center;
 }
 
@@ -16,12 +23,17 @@ header {
 
 .search-section {
   width: 30%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .search-city {
   min-width: 100%;
   max-width: 300px;
+}
+
+#search-btn {
+  background-color: blue;
+  color: white;
 }
 
 .search-section input {
@@ -57,6 +69,11 @@ header {
 }
 
 .current-weather {
+  display: none;
+}
+
+.current-weather.border {
+  display: block;
   margin: 10px;
   padding: 10px;
   border: 1px solid black;
@@ -76,4 +93,3 @@ header {
   border: 1px solid black;
   color: white;
 }
-  

@@ -5,17 +5,20 @@ const searchBtn = document.getElementById("search-btn");
 const searchHistory = document.getElementById("search-history");
 const currentWeather = document.querySelector(".current-weather");
 const forecast = document.querySelector(".forecast");
+const weatherContent = document.querySelector('.weather-content');
 
 searchBtn.addEventListener("click", () => {
   const city = searchCityInput.value;
   if (city) {
     fetchWeather(city);
+    weatherContent.style.display = 'block';
   }
 });
 
 searchHistory.addEventListener("click", (e) => {
   if (e.target.tagName === "BUTTON") {
     fetchWeather(e.target.textContent);
+    weatherContent.style.display = 'block';
   }
 });
 
@@ -46,6 +49,8 @@ function displayCurrentWeather(data) {
     <p>Humidity: ${data.main.humidity}%</p>
     <p>Wind Speed: ${data.wind.speed} m/s</p>
   `;
+  currentWeather.style.display = 'block';
+  currentWeather.classList.add("border");
 }
 
 function displayForecast(forecastData) {
@@ -71,4 +76,3 @@ function addToSearchHistory(city) {
   btn.textContent = city;
   searchHistory.appendChild(btn);
 }
-
