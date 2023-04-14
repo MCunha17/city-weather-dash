@@ -14,8 +14,9 @@ By providing current and future weather conditions across multiple cities, the W
 * <a href="https://github.com/MCunha17/city-weather-dash/blob/main/README.md#sources">Sources</a>
 
 ## Screenshot
-Here is a screenshot of the published Weather Dashboard, which you can access <a href="">here</a>.
+Here is a screenshot of the published Weather Dashboard, which you can access <a href="https://mcunha17.github.io/city-weather-dash/">here</a>.
 
+![Screenshot of Published Weather Dashboard](/assets/images/weather-dashboard-screenshot.png)
 
 ## Repository
  You can access the repository with the final code for the Weather Dashboard <a href="https://github.com/MCunha17/city-weather-dash">here</a>.
